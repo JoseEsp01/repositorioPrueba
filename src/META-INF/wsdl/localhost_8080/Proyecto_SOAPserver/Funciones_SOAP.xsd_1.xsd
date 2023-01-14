@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.2 (UNKNOWN-17d59c9; 2018-09-26T15:16:30-0700) JAXWS-RI/2.3.1 JAXWS-API/2.3.1 JAXB-RI/2.3.1 JAXB-API/2.3.1 svn-revision#unknown. --><xs:schema xmlns:tns="http://sv/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://sv/">
+
+<xs:element name="diccionario" type="tns:diccionario"/>
+
+<xs:element name="diccionarioResponse" type="tns:diccionarioResponse"/>
+
+<xs:element name="euroDolar" type="tns:euroDolar"/>
+
+<xs:element name="euroDolarResponse" type="tns:euroDolarResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="numeroPrimo" type="tns:numeroPrimo"/>
+
+<xs:element name="numeroPrimoResponse" type="tns:numeroPrimoResponse"/>
+
+<xs:element name="potencia" type="tns:potencia"/>
+
+<xs:element name="potenciaResponse" type="tns:potenciaResponse"/>
+
+<xs:complexType name="potencia">
+<xs:sequence>
+<xs:element name="base" type="xs:double"/>
+<xs:element name="exponente" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="potenciaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="numeroPrimo">
+<xs:sequence>
+<xs:element name="numero" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="numeroPrimoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="euroDolar">
+<xs:sequence>
+<xs:element name="valor" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="euroDolarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="diccionario">
+<xs:sequence>
+<xs:element name="palabra" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="diccionarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
